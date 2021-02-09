@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ES2017",
+    "module": "esnext",
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}
