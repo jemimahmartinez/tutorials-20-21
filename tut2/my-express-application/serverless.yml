@@ -1,0 +1,237 @@
+# # CREATING AND DEPLOYING A SINGLE ENDPOINT
+
+# # To get the application deployed
+# # YAML - commonly used for configuration files and in applications where data is being stored or transmitted 
+
+# service: my-express-application
+
+# provider:
+#   name: aws
+#   runtime: nodejs12.x
+#   stage: dev
+#   region: us-west-2
+
+# # Created one function called 'app' which uses the exported handler from our 'index.js' file 
+# # Configured with some HTTP triggers
+# # Uses a very broad path matching so that all requests on this domain are routed to this function
+# # All of the HTTP routing logic will be done inside the Express application
+# functions:
+#   app:
+#     handler: index.handler
+#     events:
+#       - http: ANY / 
+#       - http: 'ANY {proxy+}'
+
+# # -------------------------------------------------------------------------------------------------------------
+
+# # ADDING A DYNAMODB TABLE WITH REST-LIKE ENDPOINTS
+
+# # DynamoDB table is added as our backing store
+# # We are wanting to store Users in a database by 'userId'
+
+# # Configuring our 'serverless.yml' to provision the table which involves three parts:
+# # 1. Provisioning (providing/supplying something for use) the table in the 'resources' section
+# # 2. Adding the proper IAM permissions (to access AWS resources that are granted to IAM entities)
+# # 3. Passing the table name as an environment variable so our functions can use it
+# service: my-express-application
+
+# # Passed the table name as the environment variable 'USERS_TABLE' in the 'environment' portion of the 'provider' block
+# custom:
+#   tableName: 'users-table-${self:provider.stage}'
+
+# # Adding IAM permissions for our functions 
+# provider:
+#   name: aws
+#   runtime: nodejs12.x
+#   stage: dev
+#   region: us-west-2
+#   iamRoleStatements:
+#     - Effect: Allow
+#       Action:
+#         - dynamodb:Query
+#         - dynamodb:Scan
+#         - dynamodb:GetItem
+#         - dynamodb:PutItem
+#         - dynamodb:UpdateItem
+#         - dynamodb:DeleteItem
+#       Resource:
+#         - { "Fn::GetAtt": ["UsersDynamoDBTable", "Arn" ] }
+#   environment:
+#     USERS_TABLE: ${self:custom.tableName}
+
+# functions:
+#   app:
+#     handler: index.handler
+#     events:
+#       - http: ANY /
+#       - http: 'ANY {proxy+}'
+
+# # Provissions the table using CloudFormation syntax
+# resources:
+#   Resources:
+#     UsersDynamoDBTable:
+#       Type: 'AWS::DynamoDB::Table'
+#       Properties:
+#         AttributeDefinitions:
+#           -
+#             AttributeName: userId
+#             AttributeType: S #string
+#         KeySchema:
+#           -
+#             AttributeName: userId
+#             KeyType: HASH #partition key
+#         ProvisionedThroughput:
+#           ReadCapacityUnits: 1
+#           WriteCapacityUnits: 1
+#         TableName: ${self:custom.tableName}
+
+# # -------------------------------------------------------------------------------------------------------------
+
+# # PATH-SPECIFIC ROUTING
+
+# # Same as 'ADDING A DYNAMODB TABLE WITH REST-LIKE ENDPOINTS'
+# # Only difference is we're configuring the 'function' even more
+# # So that different routes are routed to different instances of your function
+
+# service: my-express-application
+
+# # Passed the table name as the environment variable 'USERS_TABLE' in the 'environment' portion of the 'provider' block
+# custom:
+#   tableName: 'users-table-${self:provider.stage}'
+
+# # Adding IAM permissions for our functions 
+# provider:
+#   name: aws
+#   runtime: nodejs12.x
+#   stage: dev
+#   region: us-west-2
+#   iamRoleStatements:
+#     - Effect: Allow
+#       Action:
+#         - dynamodb:Query
+#         - dynamodb:Scan
+#         - dynamodb:GetItem
+#         - dynamodb:PutItem
+#         - dynamodb:UpdateItem
+#         - dynamodb:DeleteItem
+#       Resource:
+#         - { "Fn::GetAtt": ["UsersDynamoDBTable", "Arn" ] }
+#   environment:
+#     USERS_TABLE: ${self:custom.tableName}
+
+# # All requests to 'GET /users/:userId' will be handled by the 'getUser' instance of your application
+# # All requests to 'POST /users/' will be handled by the 'createUser' instance
+# # For any other requests, they'll be handled by the main app instance of your function
+# functions:
+#   app:
+#     handler: index.handler
+#     events:
+#       - http: ANY /
+#       - http: 'ANY {proxy+}'
+#   getUser: 
+#     handler: index.handler
+#     events: 
+#       - http: 'GET /users/{proxy+}'
+#   createaUser: 
+#     handler: index.handler
+#     events:
+#       - http: 'POST /users'
+
+# # Provissions the table using CloudFormation syntax
+# resources:
+#   Resources:
+#     UsersDynamoDBTable:
+#       Type: 'AWS::DynamoDB::Table'
+#       Properties:
+#         AttributeDefinitions:
+#           -
+#             AttributeName: userId
+#             AttributeType: S #string
+#         KeySchema:
+#           -
+#             AttributeName: userId
+#             KeyType: HASH #partition key
+#         ProvisionedThroughput:
+#           ReadCapacityUnits: 1
+#           WriteCapacityUnits: 1
+#         TableName: ${self:custom.tableName}
+
+# -------------------------------------------------------------------------------------------------------------
+
+# LOCAL DEVELOPMENT CONFIGURATION WITH SERVERLESS OFFLINE PLUGIN
+
+# Same as 'PATH-SPECIFIC ROUTING' 
+# Only difference is we're adding in pluggins
+
+service: my-express-application
+
+plugins:
+  - serverless-dynamodb-local # Only added in when doing local development with a local DynamoDB emulator
+  - serverless-offline # serverless-offline needs to be last in the list
+
+# # Passed the table name as the environment variable 'USERS_TABLE' in the 'environment' portion of the 'provider' block
+# custom:
+#   tableName: 'users-table-${self:provider.stage}'
+
+# Adding IAM permissions for our functions 
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource:
+        - { "Fn::GetAtt": ["UsersDynamoDBTable", "Arn" ] }
+  environment:
+    USERS_TABLE: ${self:custom.tableName}
+
+# All requests to 'GET /users/:userId' will be handled by the 'getUser' instance of your application
+# All requests to 'POST /users/' will be handled by the 'createUser' instance
+# For any other requests, they'll be handled by the main app instance of your function
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+  getUser:
+    handler: index.handler
+    events:
+      - http: 'GET /users/{proxy+}'
+  createUser:
+    handler: index.handler
+    events:
+      - http: 'POST /users'
+
+# Provissions the table using CloudFormation syntax
+resources:
+  Resources:
+    UsersDynamoDBTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: userId
+            AttributeType: S #string
+        KeySchema:
+          -
+            AttributeName: userId
+            KeyType: HASH #partition key
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.tableName}
+
+custom:
+  tableName: 'users-table-${self:provider.stage}'
+  dynamodb:
+    start:
+      migrate: true
