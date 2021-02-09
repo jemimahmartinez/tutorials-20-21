@@ -22,17 +22,28 @@ module.exports = {
           : false,
       };
     },
+    launch: (_, { id }, { dataSources }) =>
+      dataSources.launchAPI.getLaunchById({ launchId: id }),
+    me: async (_, __, { dataSources }) =>
+      dataSources.userAPI.findOrCreateUser(),
   },
   Mission: {
     // This resolver obtains a large or small patch from `mission`, which is the object returned by the default resolver for the parent field in our schema, `Launch.mission
     // The deafult size is 'LARGE' if not provided
     missionPatch: (mission, { size } = { size: 'LARGE ' }) => {
+      console.log('missionpath');
       return size === 'SMALL'
         ? mission.missionPatchSmall
         : mission.missionPatchLarge;
     },
   },
   Launch: {
+    // mission() {
+    //   return {
+    //     missionPatchSmall: 'small',
+    //     missionPatchLarge: 'large',
+    //   };
+    // },
     isBooked: async (launch, _, { dataSources }) =>
       dataSources.userAPI.isBookedOnLaunch({ launchId: launch.id }),
   },

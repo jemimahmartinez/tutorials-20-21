@@ -47,6 +47,8 @@ const Launches: React.FC<LaunchesProps> = () => {
   if (error) return <p>ERROR</p>;
   if (!data) return <p>Not found</p>;
 
+  console.log('data here: ', data);
+
   return (
     <Fragment>
       <Header />
