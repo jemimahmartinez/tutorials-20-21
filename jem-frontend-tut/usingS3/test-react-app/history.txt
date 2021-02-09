@@ -1,0 +1,1459 @@
+    1  sudo jamf policy -trigger setupnz
+    2  sudo jamf policy -trigger lando
+    3  sudo jamf recon
+    4  sudo profiles renew -type enrollment
+    5  sudo jamf recon
+    6  curl -version
+    7  curl -version
+    8  curl --help
+    9  curl -v
+   10  curl --v
+   11  curl -V
+   12  curl -V
+   13  curl https://api.github.com
+   14  curl https://api.github.com/users/zellwk/repos
+   15  curl https://api.github.com/users/zellwk/repos\?sort\=pushed
+   16  curl -X POST https://api.github.com/user/repos\n
+   17  curl -H "Content-Type: application/json" https://api.github.com
+   18  curl -H "Content-Type: application/json" https://api.github.com -v\n
+   19  curl -X POST <URL> -d property1=value1\n
+   20  curl -x POST -u "jemimahmartinez:Jemmar948" https://api.github.com/jemimahmartinez/repos
+   21  curl -x POST -u "jemimahmartinez:Jemmar948" https://api.github.com/jemimahmartinez/repos -I
+   22  curl -X POST -u "jemimahmartinez:Jemmar948" https://api.github.com/jemimahmartinez/repos -I
+   23  curl -X POST https://api.github.com/user/repos -i
+   24  brew install Caskroom/cask/aws-vault
+   25  brew -v
+   26  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+   27  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+   28  brew install Caskroom/cask/aws-vault
+   29  aws-vault
+   30  ls
+   31  ls -a
+   32  mkdir .aws/
+   33  cd .aws
+   34  ls
+   35  touch credentials
+   36  vim credentials
+   37  aws-vault
+   38  aws-vault add capps-dev
+   39  aws-vault exec capps-dev -- aws s3 ls
+   40  brew install aws-cli
+   41  brew install awscli
+   42  aws
+   43  aws s3 ls
+   44  aws-vault exec capps-dev -- aws s3 ls
+   45  curl 
+   46  v
+   47  curl https://capps-builds-dev.s3-us-west-2.amazonaws.com/0511ff61-33c7-4c99-adb0-3a3cacc10888/BOFC.apk
+   48  curl --output https://capps-builds-dev.s3-us-west-2.amazonaws.com/0511ff61-33c7-4c99-adb0-3a3cacc10888/BOFC.apk
+   49  curl -v
+   50  curl -V
+   51  wget -v
+   52  wget
+   53  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+   54  brew install wget
+   55  export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"\n
+   56  nvm install node
+   57  nvm install node
+   58  nvm install node
+   59  npm install node
+   60  npm init --y
+   61  npm install --save express
+   62  dir
+   63  ls
+   64  node app.js
+   65  node app.js
+   66  ls
+   67  cd tut1
+   68  node app.js
+   69  node app.js
+   70  node app.js
+   71  node app.js
+   72  node app.js
+   73  node app.js
+   74  node app.js
+   75  node app.js
+   76  node app.js
+   77  node app.js
+   78  npm install --save body-parser
+   79  node app.js
+   80  node app.js
+   81  nppm install --save express-session body-parser
+   82  npm install --save express-session body-parser
+   83  node app.js
+   84  node app.js
+   85  npm install --save express body-parser multer
+   86  node app.js
+   87  node app.js
+   88  node app.js
+   89  node app.js
+   90  node app.js
+   91  node app.js
+   92  node app.js
+   93  node app.js
+   94  node app.js
+   95  node app.js
+   96  node app.js
+   97  node app.js
+   98  npm install -g nodemon
+   99  npm install nodemon
+  100  ls
+  101  npm start
+  102  nodemon app.js
+  103  node app.js
+  104  npm start
+  105  npm start
+  106  npm start
+  107  npm start
+  108  npm install --save mysql
+  109  npm start
+  110  cd ..
+  111  cd tut2
+  112  ls
+  113  mkdir my-express-application && cd my-express-application
+  114  npm init -f
+  115  npm install --save express serverless-http
+  116  sls deloy
+  117  severless deploy
+  118  cd ..
+  119  npm install severless
+  120  npm install -g serverless
+  121  npm install node-modules
+  122  npm install serverless
+  123  ls
+  124  cd my-express-application
+  125  sls deploy
+  126  serverless -v
+  127  npm install serverless
+  128  serverless -v
+  129  serverless deploy
+  130  serverless
+  131  node -v
+  132  npm -v
+  133  npm install serverless
+  134  node -v
+  135  sls deploy
+  136  ls
+  137  sls deploy
+  138  serverless
+  139  npm install -g serverless
+  140  npm install serverless
+  141  serverless
+  142  cd tut2
+  143  cd my-express-application
+  144  printenv
+  145  echo aws
+  146  echo $aws
+  147  npm install serverless
+  148  npm install -g serverless
+  149  cd ..
+  150  ls
+  151  which npm
+  152  node -v
+  153  nvm -v
+  154  which nvm
+  155  cat ~/.bash
+  156  touch ~/.zshrc
+  157  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.1/install.sh | bash
+  158  vim ~/.zshrc
+  159  source ~/.zshrc
+  160  nvm
+  161  nvm install 12
+  162  node -v
+  163  aws-vault
+  164  cat ~/.aws
+  165  cat ~/.aws/config
+  166  cat ~/.aws/credentials
+  167  aws-vault add playpen
+  168  code ~/.aws/config
+  169  code ~/.aws/config
+  170  aws-vault
+  171  aws-cli
+  172  aws
+  173  aws-vault exec playpen -- aws s3 ls
+  174  code ~/.aws/credentials
+  175  aws-vault remove playpen
+  176  aws-vault add playpen-mgmt
+  177  aws-vault exec playpen -- aws s3 ls
+  178  cd tut2
+  179  cd my-express-application
+  180  aws-value exec playpen -- serverless deploy
+  181  aws-vault exec playpen -- serverless deploy
+  182  npm install -g serverless
+  183  aws-vault exec playpen -- serverless deploy
+  184  aws-vault exec playpen -- serverless deploy
+  185  aws-vault exec playpen -- serverless deploy
+  186  aws-vault exec playpen -- serverless deploy
+  187  npm install --save aws-sdk body-parser
+  188  aws-vault exec playpen -- serverless deploy
+  189  aws-vault exec playpen -- serverless deploy
+  190  aws-vault exec playpen -- serverless deploy
+  191  aws-vault exec playpen -- serverless deploy
+  192  export BASE_DOMAIN=https://9mkl96ljl6.execute-api.us-west-2.amazonaws.com/dev
+  193  aws-vault exec playpen -- serverless deploy
+  194  ifconfig 
+  195  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d'{"userId": "alexdebriel", "name": "Alex DeBrie"}' {"userId": "alexdebriel", "name": "Alex DeBrie"}
+  196  aws-vault exec playpen -- serverless deploy
+  197  curl 124.157.73.196=https://9mkl96ljl6.execute-api.us-west-2.amazonaws.com/dev
+  198  124.157.73.196=https://9mkl96ljl6.execute-api.us-west-2.amazonaws.com/dev
+  199  curl export 124.157.73.196=https://9mkl96ljl6.execute-api.us-west-2.amazonaws.com/dev
+  200  export 124.157.73.196=https://9mkl96ljl6.execute-api.us-west-2.amazonaws.com/dev
+  201  code ~/.zshrc
+  202  source ~/.zshrc
+  203  echo $BASE_DOMAIN
+  204  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie1", "name": "Alex DeBrie"}'\n{"userId":"alexdebrie1","name":"Alex DeBrie"}
+  205  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie2", "name": "Alex DeBrie"}'
+  206  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  207  cd tut2
+  208  cd my-express-application
+  209  aws-vault exec playpen -- serverless deploy
+  210  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie1", "name": "Alex DeBrie"}'
+  211  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie9", "name": "Alex DeBrie"}'
+  212  $ curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1
+  213  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1
+  214  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie9
+  215  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1\n{"userId":"alexdebrie1","name":"Alex DeBrie"}
+  216  code ~/.zshrc
+  217  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1\n{"userId":"alexdebrie1","name":"Alex DeBrie"}
+  218  export PATH=$HOME/.local/bin:$PATH
+  219  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1\n{"userId":"alexdebrie1","name":"Alex DeBrie"}
+  220  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 {\n  "name": "Alex DeBrie",\n  "userId": "alexdebrie1"\n}
+  221  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 {"name": "Alex DeBrie","userId": "alexdebrie1"}
+  222  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 {"name":"Alex DeBrie","userId":"alexdebrie1"}
+  223  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 '{"name":"Alex DeBrie","userId":"alexdebrie1"}'
+  224  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 '{"name": "Alex DeBrie","userId": "alexdebrie1"}'
+  225  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 '{"userId": "alexdebrie1", "name": "Alex DeBrie"}'
+  226  sudo xcodebuild -license
+  227  /bin/bash -c
+  228  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  229  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1\n{"userId":"alexdebrie1","name":"Alex DeBrie"}
+  230  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1\n'{"userId":"alexdebrie1","name":"Alex DeBrie"}'
+  231  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/:alexdebrie1 '{"userId":"alexdebrie1","name":"Alex DeBrie"}'
+  232  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1 '{"userId":"alexdebrie1","name":"Alex DeBrie"}'
+  233  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1
+  234  aws-vault exec playpen -- serverless deploy
+  235  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1
+  236  aws-vault exec playpen -- serverless deploy
+  237  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie1
+  238  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie1", "name": "Alex DeBrie"}'
+  239  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie10", "name": "Alex DeBrie"}'
+  240  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie10
+  241  aws-vault exec playpen -- serverless deploy
+  242  curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie3636", "name": "Alex DeBrie"}'
+  243  curl -H "Content-Type: application/json" -X GET ${BASE_DOMAIN}/users/alexdebrie3636
+  244  serverless logs --function analyzeNote
+  245  npm install --save-dev serverless-offline
+  246  aws-vault exec playpen -- serverless offline start
+  247  aws-vault exec playpen -- serverless deploy
+  248  aws-vault exec playpen -- serverless offline start
+  249  npm install --save-dev serverless-offline
+  250  aws-vault exec playpen -- serverless offline start
+  251  npm install --save-dev serverless-offline
+  252  serverless-offline -v
+  253  aws-vault exec playpen -- serverless-offline -v
+  254  aws-vault exec playpen -- serverless-offline offline start
+  255  npm install -g serverless-offline
+  256  echo $PATH
+  257  ls /Users/jemimahmartinez/.nvm/versions/node/v12.20.0/bin
+  258  aws-vault exec playpen -- serverless-offline offline start
+  259  aws-vault exec playpen -- serverless-offline start
+  260  serverless-offline
+  261  aws-vault exec playpen -- serverless offline start
+  262  serverless offline start
+  263  cat index
+  264  cat index.js
+  265  serverless offline start app
+  266  serverless offline start -function app
+  267  npm uninstall -g serverless-offline
+  268  serverless offline start 
+  269  vm ~/.zshrc
+  270  vim ~/.zshrc
+  271  serverless offline start 
+  272  aws-vault exec playpen -- serverless deploy
+  273  serverless offline deploy
+  274  serverless offline
+  275  aws-vault exec playpen -- serverless deploy
+  276  serverless offline
+  277  npm install --save-dev serverless-dynamodb-local\n
+  278  serverless dynamodb local
+  279  adb
+  280  cd ..
+  281  exit
+  282  adb
+  283  ls ~/Library/Android/sdk
+  284  ls ~/Library/Android/sdk/build-tools
+  285  code ~/.zshrc
+  286  source ~/.zshrc
+  287  echo $PATH
+  288  adb
+  289  ls ~/Library/Android/sdk/build-tools
+  290  ls ~/Library/Android/sdk
+  291  ls ~/Library/Android/sdk/tools
+  292  ls ~/Library/Android/sdk/tools/bin
+  293  source ~/.zshrc
+  294  echo $PATH
+  295  adb
+  296  source ~/.zshrc
+  297  echo $PATH
+  298  adb
+  299  cd Downloads
+  300  adb install Push_Notification_App.apk
+  301  git
+  302  ssh-keygen -t rsa
+  303  ls ~/.ssh
+  304  cat ~/.ssh/id_rsa.pub
+  305  ssh-add
+  306  rm ~/.ssh/id_rsa*
+  307  ls ~/.ssh
+  308  ssh-keygen -t rsa
+  309  rm ~/.ssh/id_rsa*
+  310  ssh-keygen -t rsa
+  311  ssh-add
+  312  cat ~/.ssh/id_rsa.pub
+  313  cd ..
+  314  mkdir workspace
+  315  cd workspace
+  316  git clone git@github.com:pushpay/intern-projects.git
+  317  code .
+  318  cd intern-projects
+  319  git checkout -b CAPPS-8421
+  320  mkdir push-notifications
+  321  cd push-notifications
+  322  mkdir lambda-helloworld
+  323  cd lambda-helloworld
+  324  touch index.js
+  325  code index.js
+  326  node -v
+  327  aws-vault add dev
+  328  code ~/.aws/config
+  329  aws-vault exec dev -- serverless deploy
+  330  aws-vault exec dev -- serverless deploy -v
+  331  aws-vault exec playpen -- serverless deploy -v
+  332  git status
+  333  git add .
+  334  git status
+  335  git reset 
+  336  git add index.js
+  337  git add serverless.yml
+  338  unzip .serverless/jem-sqs.zip
+  339  cd .serverless
+  340  unzip jem-sqs.zip
+  341  cat index
+  342  cat index.js
+  343  cd ..
+  344  touch .gitignore
+  345  code .gitignore
+  346  git add
+  347  git add .
+  348  git status
+  349  git reset
+  350  git add .
+  351  git status
+  352  git diff --stage
+  353  git diff --staged
+  354  git commit -m "CAPPS-8421 hello world lambda"
+  355  git config --global user.email "jemimahmartinez@gmail.com"
+  356  git config --global user.name "jemimahmartinez"
+  357  git commit -m "CAPPS-8421 hello world lambda"
+  358  git push 
+  359  aws-vault exec playpen -- serverless deploy -v
+  360  aws-vault exec dev -- serverless deploy
+  361  aws-vault exec dev -- serverless deploy -v
+  362  serverless --help
+  363  serverless remove
+  364  aws-vault exec dev -- serverless remove
+  365  aws-vault exec dev -- serverless remove -v
+  366  aws-vault exec dev -- serverless deploy
+  367  aws-vault exec dev -- serverless deploy -v
+  368  git status
+  369  git add .
+  370  git status
+  371  git commit -m "CAPPS-8421 updated on dev not playpen"
+  372  git push
+  373  git status
+  374  pwd
+  375  cd ..
+  376  cp -r
+  377  cp -r ./lambda-helloworld .
+  378  cp -r ./lambda-helloworld ./
+  379  cp -r ./lambda-helloworld ../
+  380  la
+  381  ls
+  382  ls ../
+  383  mv -r ./lambda-helloworld .
+  384  mv -r ./lambda-helloworld ./
+  385  mv ./lambda-helloworld/.gitignore ./
+  386  aws-vault exec dev -- serverless deploy
+  387  cd ..
+  388  ..
+  389  -
+  390  mv push-notifications event-triggered-push-notifications
+  391  cd event-triggered-push-notifications
+  392  git staus
+  393  git status
+  394  gsb
+  395  git add -a
+  396  git add .
+  397  git status
+  398  ..
+  399  git status
+  400  git checkout -b CAPPS-8421-2
+  401  git status
+  402  git commit -m "CAPPS-8421 restructuring directories"
+  403  git push
+  404  gpsup
+  405  git push --help
+  406  npm install eslint
+  407  git status
+  408  ls
+  409  ls -a
+  410  git add .
+  411  git status
+  412  git commit -m "CAPPS-8421 deleted push-notifications folder"
+  413  git push
+  414  cd event-triggered-push-notifications
+  415  git checkout master
+  416  npm init
+  417  npm install eslint 
+  418  npm uninstall eslint
+  419  npm install eslint --save-dev
+  420  npx eslint --init
+  421  npx eslint index.js
+  422  git status
+  423  git reset --hard
+  424  npm init
+  425  npm install eslint --save-dev
+  426  npx eslint --init
+  427  git status
+  428  git add .
+  429  git status
+  430  git add .
+  431  git stash
+  432  git status
+  433  git pull
+  434  git stash pop
+  435  git status
+  436  git add .
+  437  git checkout -b "CAPPS-8432"
+  438  git commit -m "CAPPS-8432 add eslint and format"
+  439  gpsup
+  440  npx eslint index.js
+  441  git status
+  442  npx eslint index.js
+  443  npm install --save-dev eslint-config-prettier
+  444  npm install -g typescript
+  445  typescript
+  446  npm install -g typescript
+  447  npx tsc
+  448  npm typescript
+  449  npm install typescript --save-dev
+  450  npx tsc
+  451  ls
+  452  cd workspace
+  453  ls
+  454  cs intern-projects
+  455  ls
+  456  cd intern-projects
+  457  ls
+  458  cd event-triggered-push-notifications
+  459  ls
+  460  git status
+  461  prettier
+  462  npx prettier
+  463  prettier -v
+  464  npx prettier -v
+  465  git status
+  466  git add .
+  467  git status
+  468  git commit -m "CAPPS-8432 set up project with tools"
+  469  gpsup
+  470  git status
+  471  git checkout master
+  472  git status
+  473  git fetch
+  474  git pull
+  475  git checkout -b "CAPPS-8427"
+  476  git status
+  477  git checkout master
+  478  git checkout CAPPS-8437
+  479  git checkout CAPPS-8432
+  480  git log
+  481  git show
+  482  git show --stat
+  483  git show head~1 --stat
+  484  git rebase -i head~2..
+  485  git log
+  486  git rebase -i 1b9cff1a76b45915314aaa93f32fde22d8961f9f..
+  487  git log
+  488  git log 1b9cff1a76b45915314aaa93f32fde22d8961f9f..
+  489  git log 1b9cff1a76b45915314aaa93f32fde22d8961f9f..head
+  490  git rebase -i master
+  491  git show
+  492  git show --stat
+  493  git reset --soft
+  494  git status
+  495  git reset --soft head~1
+  496  git status
+  497  git show --stat
+  498  git add -i
+  499  git status
+  500  git reset --soft
+  501  git status
+  502  git restore --staged .
+  503  git status
+  504  git stage .
+  505  git status
+  506  git commit -m 'CAPPS-8432 add eslint and format'
+  507  git show --stat
+  508  git rebase --continue
+  509  git log
+  510  git log --stat
+  511  git diff --stat
+  512  git diff --stat origin/CAPPS-8432
+  513  git log --stat origin/CAPPS-8432
+  514  git push
+  515  git push --force-with-lease
+  516  git status
+  517  git checkout master
+  518  git push origin --delete CAPPS-8427
+  519  git checkout CAPPS-8342
+  520  git checkout CAPPS-8432
+  521  npm install -g typescript
+  522  git status
+  523  tsc --init
+  524  tsc
+  525  tsc index.ts
+  526  npm install @types/aws-lambda --save-dev
+  527  git status
+  528  git add .
+  529  git status
+  530  git commit -m "CAPPS-8432 added tsconfig file"
+  531  gpsup
+  532  git status
+  533  git push origin --delete CAPPS-8427
+  534  git checkout CAPPS-8427
+  535  git checkout CAPPS-8432
+  536  git branch -d CAPPS-8427
+  537  git checkout CAPPS-8427
+  538  git status
+  539  npm install -D serverless-plugin-typescript
+  540  aws-vault exec dev --serverless deploy
+  541  aws-vault exec dev -- serverless deploy
+  542  git status
+  543  git add .
+  544  git commit -m "CAPPS-8432 added base lambda"
+  545  gpsup
+  546  git status
+  547  git checkout master
+  548  git fetch
+  549  git pull
+  550  git checkout -b "CAPPS-8427"
+  551  aws-vault exec dev -- serverless deploy
+  552  aws-vault exec dev -- serverless deploy -v
+  553  git status
+  554  git add .
+  555  git commit -m "CAPPS-8427 replaced the placeholder SQS queue with a proper one"
+  556  gpsup
+  557  git status
+  558  git checkout master
+  559  git fetch
+  560  git pull
+  561  git status
+  562  git checkout -b "CAPPS-8425"
+  563  git status
+  564  aws-vault exec dev -- serverless deploy -v
+  565  serverless package
+  566  aws-vault exec dev -- serverless deploy 
+  567  aws-vault exec dev -- serverless deploy -v
+  568  git status
+  569  git add .
+  570  git commit -m "CAPPS-8425 testing a hardcoded arn and message sns"
+  571  gpsup
+  572  git status
+  573  aws-vault exec dev -- severless deploy
+  574  aws-vault exec dev -- serverless deploy 
+  575  git status
+  576  aws-vault exec dev -- serverless deploy
+  577  git status
+  578  git add .
+  579  git commit -m "CAPPS-8425 updated to handle event"
+  580  git status
+  581  gpsup
+  582  git status
+  583  git diff
+  584  git log
+  585  git add .
+  586  git diff --staged
+  587  git commit -m "CAPPS-8425 removed comments"
+  588  gpsup
+  589  node
+  590  aws-vault exec dev -- serverless deploy
+  591  git status
+  592  git add .
+  593  git diff --staged
+  594  git commit -m "CAPPS-8425 changed sns from var to const"
+  595  git push
+  596  git checkout master
+  597  git fetch
+  598  git pull 
+  599  git checkout -b "CAPPS-8425-dynamo-wiring"
+  600  aws-vault exec dev -- serverless deploy
+  601  git status
+  602  git add .
+  603  git commit -m "CAPPS-8425-dynamo-wiring handling dynamo items"
+  604  git push
+  605  gpsup
+  606  git status
+  607  aws-vault exec dev -- serverless deploy
+  608  npx eslint --init
+  609  npm i aws-sdk
+  610  npx eslint --init
+  611  aws-vault exec dev -- serverless deploy
+  612  serverless help
+  613  serverless invoke local
+  614  serverless invoke local -f push-notification-lambda
+  615  serverless invoke local --help
+  616  serverless invoke local -f push-notification-lambda -d
+  617  node 
+  618  serverless invoke local -f push-notification-lambda --raw '{"identityKey":["jt","jem"],"message":"hi"}'
+  619  serverless invoke local -f push-notification-lambda --data '{"identityKey":["jt","jem"],"message":"hi"}'
+  620  aws-vault exec dev -- serverless invoke local -f push-notification-lambda --data '{"identityKey":["jt","jem"],"message":"hi"}'
+  621  git status
+  622  git diff
+  623  git add .
+  624  git commit -m "CAPPS-8425-dynamo-wiring extracted logic into separate functions"
+  625  gpsup
+  626  git status
+  627  aws-vault exec dev -- serverless invoke local -f push-notification-lambda --data '{"identityKey":["jt","jem"],"message":"hi"}'
+  628  git status
+  629  git diff
+  630  git status
+  631  git diff
+  632  aws-vault exec dev -- serverless invoke local -f push-notification-lambda --data '{"identityKey":["jt","jem"],"message":"hi"}'
+  633  git status
+  634  git add .
+  635  git commit -m "CAPPS-8425-dynamo-wiring fixed PR suggestions"
+  636  gpsup
+  637  git checkout master
+  638  git fetch
+  639  git pull
+  640  git checkout -b "CAPPS-8425-unit-testing"
+  641  git status
+  642  npm install --save-dev jest
+  643  npm install --dev @types/jest
+  644  npm uninstall --dev @types/jest
+  645  npm install --devDependencies @types/jest
+  646  npm i typescript @types/node jest @types/jest ts-jest source-map-support @types/source-map-support onchange serve -SD
+  647  git status
+  648  npm ts-jest config:init
+  649  jest --init
+  650  jest -v
+  651  npm install jest --global
+  652  jest --init
+  653  npm run test
+  654  npm install @types/jest
+  655  npm install --save-dev eslint-plugin-jest
+  656  eslint
+  657  npm run lint
+  658  git status
+  659  git stash
+  660  git status
+  661  git stash apply
+  662  git stash
+  663  git status
+  664  git stash apply
+  665  git status
+  666  git checkout .eslint
+  667  git checkout .eslintrc.js
+  668  git stash apply
+  669  npm i --save-dev prettier
+  670  npm install --save-dev 'eslint-plugin-prettier'
+  671  git status
+  672  git add .
+  673  git commit -m "CAPPS-8425-unit-testing properly configured prettier"
+  674  gpsup
+  675  git status
+  676  git add .
+  677  git commit -m "CAPPS-8425-unit-testing formatted eslintrc.js"
+  678  git push
+  679  npm install @typescript-eslint/parser
+  680  git status
+  681  npm run test
+  682  Jest --detectOpenHandles
+  683  npm run test
+  684  --detectOpenHandles
+  685  npm run test --detectOpenHandles
+  686  npm run test
+  687  git diff
+  688  ls
+  689  git diff src/push-notifications-lambda
+  690  git stash
+  691  git status
+  692  git add src
+  693  git status
+  694  git log
+  695  git reset
+  696  git stash apply
+  697  git status
+  698  git add src
+  699  git status
+  700  git add src-push-notification-lambda/
+  701  git status
+  702  git diff --staged
+  703  git add src
+  704  git status
+  705  git commit -m "CAPPS-8425-unit-testing moved files"
+  706  git push
+  707  npm run test
+  708  \\nnpm run test
+  709  \nnpm run test
+  710  node
+  711  npm run test
+  712  git status
+  713  npm run test
+  714  git status
+  715  git add .
+  716  git diff
+  717  git commit -m "CAPPS-8425-unit-testing added unit tests for getArnByIdentityKey"
+  718  git push
+  719  git status
+  720  npm run test
+  721  git status
+  722  npm run test
+  723  git status
+  724  npm install jest-aws-sdk-mock --save-dev
+  725  npm run test
+  726  npm install aws-sdk-mock --save-dev
+  727  git status
+  728  npm run test
+  729  npm install aws-sdk
+  730  npm run test
+  731  ls
+  732  cd workspace
+  733  ls
+  734  cd intern-projects
+  735  ls
+  736  cd event-triggered-push-notifications
+  737  ls
+  738  npm run test
+  739  npm uninstall jest-aws-sdk-mock
+  740  rm -rf node_modules
+  741  npm install 
+  742  npm run test
+  743  npm test --detectOpenHandles
+  744  npm run test
+  745  git status
+  746  git add .
+  747  git commit -m "CAPPS-8425-unit-testing completed unit tests for push notification lambda"
+  748  git push
+  749  git status
+  750  npm run test
+  751  git status
+  752  git add .
+  753  git commit -m "CAPPS-8425-unit-testing got rid of unnecessary packages"
+  754  git push
+  755  git status
+  756  npm run test
+  757  git status
+  758  git add .
+  759  git commit "CAPPS-8425-unit-testing removed comments"
+  760  git commit -m "CAPPS-8425-unit-testing removed comments"
+  761  git push
+  762  npm run test
+  763  git status
+  764  git add .
+  765  git commit -m "CAPPS-8425-unit-testing additional fixes to unit tests"
+  766  git push
+  767  git status
+  768  git checkout mastre
+  769  git checkout master
+  770  git fetch
+  771  git pull
+  772  git checkout CAPPS-8425-unit-testing
+  773  npm run test
+  774  git checkout master
+  775  git checkout -b "CAPPS-8429"
+  776  git status
+  777  aws-vault exec dev -- serverless deploy
+  778  git status
+  779  git diff
+  780  git status
+  781  git add .
+  782  git commit -m "CAPPS-8429 created filter lambda"
+  783  gpsup
+  784  git status
+  785  git checkout master
+  786  git fetch
+  787  git pull
+  788  git checkout -b "CAPPS-8430"
+  789  git status
+  790  aws-vault exec dev -- serverless deploy
+  791  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -- data '{\n  "eventType": "com.pushpay.payments.paymentupdated",\n  "eventTypeVersion": "0.3",\n  "cloudEventsVersion": "0.1",\n  "source": "/pushpay/dev/donor-platform",\n  "eventID": "2c393f23-85ff-41a9-961f-6eb1087ca30e",\n  "eventTime": "2020-09-11T02:20:47.2427618Z",\n  "contentType": "application/json",\n  "extensions": {\n    "PushpayCorrelationId": "04574d025736422a924c5a554317b09d"\n  },\n  "data": {\n    "creditCard": {\n      "gateway": "PushpayTest",\n      "gatewayResponseCode": "Success"\n    },\n    "fund": {\n      "code": "4001-1-D001-01-370-1-320-016-008-8-102",\n      "id": 257074,\n      "key": "yaAlsnDiqoFMOwCrR_Jn4Q",\n      "name": "PAN-like",\n      "taxDeductible": true\n    },\n    "payer": {\n      "address": {\n        "city": "Sometown",\n        "countryCode": "US",\n        "line1": "52 Fake St",\n        "postcode": "1000",\n        "state": "Somewhere"\n      },\n      "emailAddress": "bob.testerson3@test.com",\n      "firstName": "Bob",\n      "id": 232181,\n      "identityKey": "3ef6a79f96706bd79cd428efaf4fae99",\n      "lastName": "Testerson",\n      "lockVersion": 223,\n      "mobileNumber": "+12019999997"\n    },\n    "recipient": {\n      "ecgId": "ECG-6504754",\n      "merchantId": 174479,\n      "merchantLockVersion": 197,\n      "merchantName": "mychurch",\n      "organizationId": 217943,\n      "organizationLockVersion": 74,\n      "organizationName": "mychurch Organization",\n      "organizationKey": "023d37f4b116438ea339635f26c59b35"\n    },\n    "amount": 22.110000000000000000,\n    "confirmationMethod": "NotRequired",\n    "createdByEmail": "admin@getpushpay.com",\n    "createdOn": "2020-09-11T02:20:45.383Z",\n    "currency": "USD",\n    "notes": "A Simple Note",\n    "gatewayReference": "9054ead92d2e475082640a4956bb94fe",\n    "legalGivenOn": "2020-09-11T02:20:45.3818165Z",\n    "id": 100200400494,\n    "ipAddress": "127.0.0.1",\n    "lastPaymentGatewayResponseId": 100200400503,\n    "lockVersion": 4,\n    "paymentMethodType": "CreditCard",\n    "paymentResultCode": "Success",\n    "publicApiUpdatedOn": "2020-09-11T02:20:46.007Z",\n    "reference": "4111-11....1111",\n    "refundType": "NotARefund",\n    "source": "VirtualTerminal",\n    "status": "Success",\n    "updatedOn": "2020-09-11T02:20:46.2Z",\n    "communityMemberTypeAtTimeOfGift": "Individual",\n    "paymentMethodId": 100200400491,\n    "paymentToken": "2072821d-e02d-d12b-2c58-238afaf3e4b7",\n    "createdByIdentityKey": "7e9db79a-828f-4a59-8c07-7ffae308530c",\n    "referenceValues": [\n      {\n        "id": 100200400496,\n        "definitionId": 174480,\n        "value": "Bob Testerson"\n      },\n      {\n        "id": 100200400497,\n        "definitionId": 174481,\n        "value": "bob.testerson3@test.com"\n      },\n      {\n        "id": 100200400498,\n        "definitionId": 222781,\n        "value": "4001-1-D001-01-370-1-320-016-008-8-102",\n        "choiceKey": "yaAlsnDiqoFMOwCrR_Jn4Q",\n        "choiceLabel": "PAN-like"\n      },\n      {\n        "id": 100200400499,\n        "definitionId": 243397,\n        "value": "A reference field!1!"\n      }\n    ]\n  }\n}\nCollapse\n\n\n\n'
+  792  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda --data '{\n  "eventType": "com.pushpay.payments.paymentupdated",\n  "eventTypeVersion": "0.3",\n  "cloudEventsVersion": "0.1",\n  "source": "/pushpay/dev/donor-platform",\n  "eventID": "2c393f23-85ff-41a9-961f-6eb1087ca30e",\n  "eventTime": "2020-09-11T02:20:47.2427618Z",\n  "contentType": "application/json",\n  "extensions": {\n    "PushpayCorrelationId": "04574d025736422a924c5a554317b09d"\n  },\n  "data": {\n    "creditCard": {\n      "gateway": "PushpayTest",\n      "gatewayResponseCode": "Success"\n    },\n    "fund": {\n      "code": "4001-1-D001-01-370-1-320-016-008-8-102",\n      "id": 257074,\n      "key": "yaAlsnDiqoFMOwCrR_Jn4Q",\n      "name": "PAN-like",\n      "taxDeductible": true\n    },\n    "payer": {\n      "address": {\n        "city": "Sometown",\n        "countryCode": "US",\n        "line1": "52 Fake St",\n        "postcode": "1000",\n        "state": "Somewhere"\n      },\n      "emailAddress": "bob.testerson3@test.com",\n      "firstName": "Bob",\n      "id": 232181,\n      "identityKey": "3ef6a79f96706bd79cd428efaf4fae99",\n      "lastName": "Testerson",\n      "lockVersion": 223,\n      "mobileNumber": "+12019999997"\n    },\n    "recipient": {\n      "ecgId": "ECG-6504754",\n      "merchantId": 174479,\n      "merchantLockVersion": 197,\n      "merchantName": "mychurch",\n      "organizationId": 217943,\n      "organizationLockVersion": 74,\n      "organizationName": "mychurch Organization",\n      "organizationKey": "023d37f4b116438ea339635f26c59b35"\n    },\n    "amount": 22.110000000000000000,\n    "confirmationMethod": "NotRequired",\n    "createdByEmail": "admin@getpushpay.com",\n    "createdOn": "2020-09-11T02:20:45.383Z",\n    "currency": "USD",\n    "notes": "A Simple Note",\n    "gatewayReference": "9054ead92d2e475082640a4956bb94fe",\n    "legalGivenOn": "2020-09-11T02:20:45.3818165Z",\n    "id": 100200400494,\n    "ipAddress": "127.0.0.1",\n    "lastPaymentGatewayResponseId": 100200400503,\n    "lockVersion": 4,\n    "paymentMethodType": "CreditCard",\n    "paymentResultCode": "Success",\n    "publicApiUpdatedOn": "2020-09-11T02:20:46.007Z",\n    "reference": "4111-11....1111",\n    "refundType": "NotARefund",\n    "source": "VirtualTerminal",\n    "status": "Success",\n    "updatedOn": "2020-09-11T02:20:46.2Z",\n    "communityMemberTypeAtTimeOfGift": "Individual",\n    "paymentMethodId": 100200400491,\n    "paymentToken": "2072821d-e02d-d12b-2c58-238afaf3e4b7",\n    "createdByIdentityKey": "7e9db79a-828f-4a59-8c07-7ffae308530c",\n    "referenceValues": [\n      {\n        "id": 100200400496,\n        "definitionId": 174480,\n        "value": "Bob Testerson"\n      },\n      {\n        "id": 100200400497,\n        "definitionId": 174481,\n        "value": "bob.testerson3@test.com"\n      },\n      {\n        "id": 100200400498,\n        "definitionId": 222781,\n        "value": "4001-1-D001-01-370-1-320-016-008-8-102",\n        "choiceKey": "yaAlsnDiqoFMOwCrR_Jn4Q",\n        "choiceLabel": "PAN-like"\n      },\n      {\n        "id": 100200400499,\n        "definitionId": 243397,\n        "value": "A reference field!1!"\n      }\n    ]\n  }\n}\nCollapse\n\n\n\n'
+  793  serverless invoke local --help
+  794  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda --data '{\n  "eventType": "com.pushpay.payments.paymentupdated",\n  "eventTypeVersion": "0.3",\n  "cloudEventsVersion": "0.1",\n  "source": "/pushpay/dev/donor-platform",\n  "eventID": "2c393f23-85ff-41a9-961f-6eb1087ca30e",\n  "eventTime": "2020-09-11T02:20:47.2427618Z",\n  "contentType": "application/json",\n  "extensions": {\n    "PushpayCorrelationId": "04574d025736422a924c5a554317b09d"\n  },\n  "data": {\n    "creditCard": {\n      "gateway": "PushpayTest",\n      "gatewayResponseCode": "Success"\n    },\n    "fund": {\n      "code": "4001-1-D001-01-370-1-320-016-008-8-102",\n      "id": 257074,\n      "key": "yaAlsnDiqoFMOwCrR_Jn4Q",\n      "name": "PAN-like",\n      "taxDeductible": true\n    },\n    "payer": {\n      "address": {\n        "city": "Sometown",\n        "countryCode": "US",\n        "line1": "52 Fake St",\n        "postcode": "1000",\n        "state": "Somewhere"\n      },\n      "emailAddress": "bob.testerson3@test.com",\n      "firstName": "Bob",\n      "id": 232181,\n      "identityKey": "3ef6a79f96706bd79cd428efaf4fae99",\n      "lastName": "Testerson",\n      "lockVersion": 223,\n      "mobileNumber": "+12019999997"\n    },\n    "recipient": {\n      "ecgId": "ECG-6504754",\n      "merchantId": 174479,\n      "merchantLockVersion": 197,\n      "merchantName": "mychurch",\n      "organizationId": 217943,\n      "organizationLockVersion": 74,\n      "organizationName": "mychurch Organization",\n      "organizationKey": "023d37f4b116438ea339635f26c59b35"\n    },\n    "amount": 22.110000000000000000,\n    "confirmationMethod": "NotRequired",\n    "createdByEmail": "admin@getpushpay.com",\n    "createdOn": "2020-09-11T02:20:45.383Z",\n    "currency": "USD",\n    "notes": "A Simple Note",\n    "gatewayReference": "9054ead92d2e475082640a4956bb94fe",\n    "legalGivenOn": "2020-09-11T02:20:45.3818165Z",\n    "id": 100200400494,\n    "ipAddress": "127.0.0.1",\n    "lastPaymentGatewayResponseId": 100200400503,\n    "lockVersion": 4,\n    "paymentMethodType": "CreditCard",\n    "paymentResultCode": "Success",\n    "publicApiUpdatedOn": "2020-09-11T02:20:46.007Z",\n    "reference": "4111-11....1111",\n    "refundType": "NotARefund",\n    "source": "VirtualTerminal",\n    "status": "Success",\n    "updatedOn": "2020-09-11T02:20:46.2Z",\n    "communityMemberTypeAtTimeOfGift": "Individual",\n    "paymentMethodId": 100200400491,\n    "paymentToken": "2072821d-e02d-d12b-2c58-238afaf3e4b7",\n    "createdByIdentityKey": "7e9db79a-828f-4a59-8c07-7ffae308530c",\n    "referenceValues": [\n      {\n        "id": 100200400496,\n        "definitionId": 174480,\n        "value": "Bob Testerson"\n      },\n      {\n        "id": 100200400497,\n        "definitionId": 174481,\n        "value": "bob.testerson3@test.com"\n      },\n      {\n        "id": 100200400498,\n        "definitionId": 222781,\n        "value": "4001-1-D001-01-370-1-320-016-008-8-102",\n        "choiceKey": "yaAlsnDiqoFMOwCrR_Jn4Q",\n        "choiceLabel": "PAN-like"\n      },\n      {\n        "id": 100200400499,\n        "definitionId": 243397,\n        "value": "A reference field!1!"\n      }\n    ]\n  }\n}\nCollapse\n\n\n\n'
+  795  touch test.json
+  796  vim test.json
+  797  serverless invoke local --help
+  798  serverless invoke local -f filter-payload-lambda -p ./test.json
+  799  aws sts get-caller-identity
+  800  aws configure
+  801  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  802  vim test.json
+  803  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  804  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  805  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  806  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  807  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  808  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  809  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  810  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  811  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  812  aws-vault rotate playpen-mgmt
+  813  git status
+  814  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  815  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  816  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  817  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  818  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  819  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  820  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  821  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  822  aws-vault exec dev -- serverless deploy
+  823  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  824  aws-vault exec dev -- serverless deploy
+  825  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  826  aws-vault exec dev -- serverless deploy
+  827  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  828  aws-vault exec dev -- serverless deploy
+  829  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  830  aws-vault exec dev -- serverless invoke local -f push-notification-lambda -p ./test1.json
+  831  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  832  aws-vault exec dev -- serverless deploy
+  833  aws-vault exec dev -- serverless invoke local -f filter-payload-lambda -p ./test.json
+  834  aws-vault exec dev -- serverless deploy
+  835  node 
+  836  aws-vault exec dev -- serverless deploy
+  837  git status
+  838  git diff
+  839  git add .
+  840  git commit -m "CAPPS-8430 sqs publish works"
+  841  git push
+  842  gpsup
+  843  git status
+  844  aws-vault exec dev -- serverless deploy
+  845  git status
+  846  git diff
+  847  git add .
+  848  git commit -m "CAPPS-8430 changed identityKey from Array<string? to string"
+  849  git push
+  850  node
+  851  aws-vault exec dev -- serverless deploy
+  852  git status
+  853  git diff
+  854  git add .
+  855  git commit -m "CAPPS-8430 removed unnecessary awaits"
+  856  git push
+  857  aws-vault exec dev -- serverless deploy
+  858  git diff
+  859  aws-vault exec dev -- serverless deploy
+  860  git diff
+  861  git status
+  862  git add .
+  863  git commit -m "CAPPS-8430 extracted more logic out of the handler function to make readyForSQS"
+  864  git push
+  865  git checkout master
+  866  git fetch
+  867  git pull
+  868  git status
+  869  aws-vault exec dev -- serverless deploy
+  870  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  871  brew install fzf\n
+  872  apt-cache show fzf
+  873  history | fzf
+  874  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  875  ls
+  876  cd workspace
+  877  ls
+  878  cd intern-projects
+  879  cd event-triggered-push-notifications
+  880  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  881  aws-vault exec dev -- serverless deploy
+  882  rm -rf .build
+  883  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  884  aws-vault exec dev -- serverless deploy -f filter-payload-lambda
+  885  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  886  node
+  887  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  888  aws-vault exec dev -- serverless deploy
+  889  aws-vault exec dev -- serverless deploy -f filter-payload-lambda
+  890  aws-vault exec dev -- serverless deploy
+  891  aws-vault exec dev -- serverless deploy -f filter-payload-lambda
+  892  git checkout -b "CAPPS-8430-fixups"
+  893  git status
+  894  git add .
+  895  git commit -m "CAPPS-8430-fixups fixed identityKey array issue"
+  896  gpsup
+  897  aws-vault exec dev -- serverless deploy
+  898  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  899  ls
+  900  cd workspace
+  901  ls
+  902  cd intern-projects
+  903  cd event-triggered-push-notifications
+  904  jest --watch
+  905  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  906  ls 
+  907  cd workspace/intern-projects/event-triggered-push-notifications
+  908  jest --watch
+  909  aws sns publish --help
+  910  aws sns publish -h
+  911  aws sns --help
+  912  aws sns help
+  913  aws sns publish help
+  914  aws sns publish
+  915  node
+  916  aws sns publish --target-arn "arn:aws:sns:us-west-2:120023305280:endpoint/GCM/Push-Notification-App/6863b12b-8bbe-3c66-96db-bbaa040eed49"
+  917  tsc
+  918  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  919  aws sns publish --target-arn "arn:aws:sns:us-west-2:120023305280:endpoint/GCM/Push-Notification-App/6863b12b-8bbe-3c66-96db-bbaa040eed49" --message-structure "json" --message "{\"GCM\": \"{ \\\"data\\\": { \\\"message\\\": \\\"Sample message for Android endpoints\\\" }}\"}"
+  920  aws-vault exec dev -- aws sns publish --target-arn "arn:aws:sns:us-west-2:120023305280:endpoint/GCM/Push-Notification-App/6863b12b-8bbe-3c66-96db-bbaa040eed49" --message-structure "json" --message "{\"GCM\": \"{ \\\"data\\\": { \\\"message\\\": \\\"Sample message for Android endpoints\\\" }}\"}"
+  921  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  922  git status
+  923  git diff
+  924  git add .
+  925  git commit -m "CAPPS-8430-fixups fixed message visibility on notification"
+  926  git push
+  927  git status
+  928  git add .
+  929  git status
+  930  git commit -m "CAPPS-8430-fixups removed mapped js files"
+  931  git push
+  932  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  933  aws-vault exec dev -- serverless deploy
+  934  git status
+  935  git diff
+  936  aws-vault exec dev -- serverless deploy
+  937  git diff
+  938  git status
+  939  git add .
+  940  git commit -m "CAPPS-8430-fixups fixed PR changes and SQS message types\n"
+  941  git push
+  942  git status
+  943  aws-vault exec dev -- serverless deploy
+  944  aws-vault exec dev -- serverless deploy -f filter-lambda
+  945  aws-vault exec dev -- serverless deploy -f filter-payload-lambda
+  946  aws-vault exec dev -- serverless deploy 
+  947  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  948  cd workspace/intern-projects/event-triggered-push-notifications
+  949  git status
+  950  git diff
+  951  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  952  git status
+  953  git staus
+  954  git status
+  955  git diff
+  956  git add .
+  957  git commit -m "CAPPS-8430-fixups more PR changes plus some error handling"
+  958  git push
+  959  git status
+  960  git push
+  961  git fetch
+  962  git push
+  963  eval $(ssh-agent)
+  964  ssh-add
+  965  eval `ssh-agent -s`
+  966  ssh-keygen -f ~/.ssh/id_rsa -p\n
+  967  ssh-keygen -t ed25519 -C "martinezjemimah@gmail.com"
+  968  git push
+  969  cd workspace/intern-projects/event-triggered-push-notifications
+  970  jest --watch
+  971  git status
+  972  aws-vault exec dev -- serverless deploy -f push-notification-lambda
+  973  aws-vault exec dev -- serverless deploy
+  974  git status
+  975  git checkout master
+  976  git fetch
+  977  ssh-add
+  978  git fetch
+  979  git pull
+  980  git checkout -b "CAPPS-8424-unit-testing"
+  981  git status
+  982  git add .
+  983  git diff
+  984  git commit -m "CAPPS-8424-unit-testing"
+  985  git commit --amend
+  986  git status
+  987  git push
+  988  gpsup
+  989  git status
+  990  cd workspace/intern-projects/event-triggered-push-notifications
+  991  git status
+  992  cd workspace/intern-projects/event-triggered-push-notifications
+  993  jest --watch
+  994  git status
+  995  git add .
+  996  git commit -m "CAPPS-8424-unit-testing added additional tests to pn lambda"
+  997  git push
+  998  ssh-add
+  999  git push
+ 1000  ts --noEmit src/filter-lambda/index.test.ts
+ 1001  tsc --noEmit src/filter-lambda/index.test.ts
+ 1002  jest --collect-coverage
+ 1003  jest --watch
+ 1004  git status
+ 1005  jest --collect-coverage
+ 1006  jest --watch
+ 1007  jest --collect-coverage
+ 1008  jest --watch
+ 1009  npm test
+ 1010  npm test --listTests
+ 1011  jest --watch
+ 1012  jest --collect-coverage
+ 1013  git status
+ 1014  git diff 
+ 1015  git add .
+ 1016  git commit -m "CAPPS-8424-unit-testing added unit tests for the filter lambda"
+ 1017  git push
+ 1018  docker ps
+ 1019  docker help
+ 1020  docker run
+ 1021  docker run hello-world
+ 1022  docker run node:12
+ 1023  docker run node
+ 1024  docker run node:12
+ 1025  docker run node:12 -it
+ 1026  docker run -it node:12
+ 1027  docker ps
+ 1028  docker ps -a
+ 1029  docker build
+ 1030  docker build -t
+ 1031  docker build -t nodeTest
+ 1032  docker build -t nodeTest .
+ 1033  docker build -t nodtest .
+ 1034  mv Dockerfile ~/Desktop
+ 1035  cd desktop
+ 1036  ls
+ 1037  cd ../Desktop
+ 1038  ls
+ 1039  docker build -t nodtest .
+ 1040  docker run nodtest
+ 1041  docker run -it nodtest
+ 1042  node app.js
+ 1043  docker build -t nodetest .
+ 1044  docker run nodetest
+ 1045  git status
+ 1046  jest --watch
+ 1047  git status
+ 1048  git add .
+ 1049  git commit -m "CAPPS-8424-unit-testing added await/async to some tests"
+ 1050  git push
+ 1051  git status
+ 1052  git diff
+ 1053  git status
+ 1054  git add .
+ 1055  git commit -m "CAPPS-8424-unit-testing extended HandlerEvent to allow for identityKeys to be a string"
+ 1056  git push
+ 1057  git status
+ 1058  git add .
+ 1059  git commit -m "CAPPS-8424-unit-testing removed test2.json file because its not used"
+ 1060  git push
+ 1061  git status
+ 1062  git diff
+ 1063  git status
+ 1064  git add .
+ 1065  git commit -m "CAPPS-8424-unit-testing additional requirements to tests added"
+ 1066  git status
+ 1067  git push
+ 1068  git checkout master
+ 1069  git fetch
+ 1070  git pull
+ 1071  ~/downloads
+ 1072  ~/Downloads
+ 1073  adb install Push_Notification_App.apk
+ 1074  adb logcat
+ 1075  adb logcat -e ".*error.*"
+ 1076  adb logcat -e ".*notification.*"
+ 1077  git status
+ 1078  ~/workspace/intern-projects/event-triggered-push-notifications
+ 1079  git status
+ 1080  adb logcat 
+ 1081  adb logcat -e ".*notification.*"
+ 1082  adb logcat -e ".*pushnotificationapp.*"
+ 1083  adb logcat > hello.txt
+ 1084  code hello.txt
+ 1085  cd workspace
+ 1086  cd intern-projects/event-triggered-push-notifications
+ 1087  code hello.txt
+ 1088  node -v
+ 1089  npm install -g react-native
+ 1090  react-native log-android
+ 1091  adb logcat -e ".*react.*"
+ 1092  adb logcat -e ".*reactnative.*"
+ 1093  adb logcat -e ".*ReactNative.*"
+ 1094  aws-vault exec dev -- serverless deploy
+ 1095  git status
+ 1096  git rm hello.txt
+ 1097  git status
+ 1098  git rm -r hello.txt
+ 1099  git rm -f hello.txt
+ 1100  git status
+ 1101  adb logcat -e ".*pushnotificationapp.*"
+ 1102  aws-vault exec dev -- serverless deploy
+ 1103  adb install ~/Downloads/Push_Notification_App.apk
+ 1104  adb logcat
+ 1105  aws-vault exec dev -- serverless deploy
+ 1106  git status
+ 1107  git diff
+ 1108  git checkout -b "CAPPS-8424-additional"
+ 1109  git status
+ 1110  git add .
+ 1111  git commit "CAPPS-8424-additional added ACH, s3 image and emoji"
+ 1112  git commit -m "CAPPS-8424-additional added ACH, s3 image and emoji"
+ 1113  gpsup
+ 1114  git status
+ 1115  git checkout master
+ 1116  git fetch
+ 1117  git pull
+ 1118  cd /Users/jemimahmartinez
+ 1119  cd amplifyTut
+ 1120  git status
+ 1121  npm install -g @aws-amplify/cli
+ 1122  amplify configure
+ 1123  npx create-react-app react-amplified
+ 1124  cd react-amplified
+ 1125  npm start
+ 1126  amplify init
+ 1127  npm install aws-amplify @aws-amplify/ui-react
+ 1128  cp /Users/jemimahmartinez/workspace/intern-projects/event-triggered-push-notifications/.eslintrc.js .
+ 1129  cp /Users/jemimahmartinez/workspace/intern-projects/event-triggered-push-notifications/tsconfig.json .
+ 1130  npm install @types/react-dom
+ 1131  cd ~
+ 1132  cd workspace/intern-projects
+ 1133  ls 
+ 1134  cd event-triggered-push-notifications
+ 1135  ls
+ 1136  cd ..
+ 1137  mkdir jem-frontend-tut
+ 1138  mv ~/amplifyTut jem-frontend-tut
+ 1139  git status
+ 1140  git add .
+ 1141  git status
+ 1142  git reset
+ 1143  git status
+ 1144  cd jem-frontend-tut
+ 1145  cd amplifyTut
+ 1146  ls-la
+ 1147  ls -la
+ 1148  cd react-amplified
+ 1149  ls -la
+ 1150  rm .git
+ 1151  rm -r .git
+ 1152  rm -rf .git
+ 1153  ls -la
+ 1154  rm .gitignore
+ 1155  git status
+ 1156  cd ../..
+ 1157  git add .
+ 1158  git status
+ 1159  git diff
+ 1160  git diff --staged
+ 1161  git checkout -b "jem-amplify-tutorial"
+ 1162  git commit -m "init"
+ 1163  gpsup
+ 1164  amplify add api
+ 1165  ls
+ 1166  cd amplifyTut
+ 1167  ls
+ 1168  cd react-amplified
+ 1169  ls
+ 1170  amplify add api
+ 1171  ls amplify
+ 1172  ls amplify/backend/auth
+ 1173  ls amplify/backend/auth/cognitoa6435219
+ 1174  ls amplify/backend/auth/cognitocc0a0597
+ 1175  amplify add api
+ 1176  amplify push
+ 1177  cat ~/.aws/credentials
+ 1178  amplify push
+ 1179  amplify status
+ 1180  amplify --help
+ 1181  amplify delete
+ 1182  amplify add api
+ 1183  amplify int
+ 1184  amplify init
+ 1185  amplify add api
+ 1186  amplify push
+ 1187  amplify status
+ 1188  amplify delete
+ 1189  amplify add api
+ 1190  amplify init
+ 1191  amplify add api
+ 1192  amplify push
+ 1193  git status
+ 1194  git add .
+ 1195  git commit -m "created graphQL API and database and deployed it"
+ 1196  git push
+ 1197  amplify status
+ 1198  amplify console api
+ 1199  amplify console
+ 1200  amplify mock api
+ 1201  aws-vault rotate playpen-mgmt 
+ 1202  npm start
+ 1203  npm install -g typescript
+ 1204  npm start
+ 1205  git status
+ 1206  npm install typescript
+ 1207  git status
+ 1208  npm start
+ 1209  npm install --save-dev eslint-config-prettier
+ 1210  npm start
+ 1211  npm ls
+ 1212  npx eslint .
+ 1213  npm install --save-dev eslint-config-airbnb-base
+ 1214  npm start
+ 1215  npm install --save-dev eslint-plugin-prettier
+ 1216  npm start
+ 1217  npm install --save-dev prettier
+ 1218  npm start
+ 1219  --fix
+ 1220  npm start
+ 1221  eslint --fix
+ 1222  npm start
+ 1223  npm install eslint-plugin-import
+ 1224  npm start
+ 1225  amplify console api
+ 1226  amplify mock api
+ 1227  amplify console
+ 1228  amplify status
+ 1229  npm start
+ 1230  vim .vscode/settings.json
+ 1231  cat .vscode
+ 1232  cat .vscode/settings.json
+ 1233  rm -rf node_modules
+ 1234  npm install
+ 1235  cat .vscode/settings.json
+ 1236  node_modules/typescript/lib
+ 1237  ..
+ 1238  vim .vscode/settings.json
+ 1239  node_modules/typescript/bin/tsc --version
+ 1240  tsc --version
+ 1241  npm start
+ 1242  npm eslint-plugin-import --version
+ 1243  eslint-plugin-import --version
+ 1244  npm start
+ 1245  npm i -S @aws-amplify/api
+ 1246  npm start
+ 1247  npm i @typescript-eslint/eslint-plugin
+ 1248  npm start
+ 1249  npm i --save-dev typescript @typescript-eslint/parser
+ 1250  npm i --save-dev @typescript-eslint/eslint-plugin
+ 1251  npm start
+ 1252  rm -rf node_modules
+ 1253  npm i node_modules
+ 1254  npm install
+ 1255  npm start
+ 1256  eslint --help
+ 1257  node_modules/eslint/bin/eslint.js --help
+ 1258  node_modules/eslint/bin/eslint.js --fix
+ 1259  eslint
+ 1260  node_modules/eslint/bin/eslint.js
+ 1261  npm start
+ 1262  amplify console
+ 1263  npm build
+ 1264  npm run build
+ 1265  git statu
+ 1266  git status
+ 1267  git diff
+ 1268  git add .
+ 1269  git commit -m "connected api and database to the app"
+ 1270  git push
+ 1271  amplify add auth
+ 1272  amplify push
+ 1273  npm start
+ 1274  amplify add hosting
+ 1275  amplify publish
+ 1276  npm start
+ 1277  git status
+ 1278  git diff
+ 1279  git add .
+ 1280  git commit -m "added authentication and deployed and hosted the app"
+ 1281  git push
+ 1282  awscli
+ 1283  ls
+ 1284  cd ..
+ 1285  ls
+ 1286  mkdir usingS3
+ 1287  cd usingS3
+ 1288  npm create react-app test-react-app
+ 1289  npm build
+ 1290  npm deploy
+ 1291  aws s3 sync build/ s3://jem-test-react-app
+ 1292  npm build
+ 1293  cd test-react-app
+ 1294  npm build
+ 1295  npm run-script build
+ 1296  npm deploy
+ 1297  aws s3 sync build/ s3://jem-test-react-app
+ 1298  aws-vault s3 sync build/s3://jem-test-react-app
+ 1299  aws configure
+ 1300  aws configure list
+ 1301  aws-vault exec dev -- aws s3 sync build/ s3://jem-test-react-app
+ 1302  git status
+ 1303  git diff
+ 1304  cd ..
+ 1305  git status
+ 1306  git diff
+ 1307  cd usingS3
+ 1308  git status
+ 1309  git diff
+ 1310  ls
+ 1311  cd test-react-app
+ 1312  git status
+ 1313  git diff
+ 1314  git add .
+ 1315  git commit -m "added react with s3 tutorial"
+ 1316  git push
+ 1317  cd ..
+ 1318  docker info
+ 1319  touch Dockerfile
+ 1320  git status
+ 1321  git rm -r Dockerfile
+ 1322  code Dockerfile
+ 1323  docker build -t hello-world
+ 1324  docker build --help
+ 1325  docker build -t hello-world
+ 1326  docker build -t hello-world .
+ 1327  docker images --filter reference=hello-world
+ 1328  cd desktop
+ 1329  cd ..
+ 1330  ls
+ 1331  cd Desktop
+ 1332  ls
+ 1333  code Dockerfile
+ 1334  docker run -t -i -p 80:80 hello-world
+ 1335  aws ecr create-repository --repository-name hello-repository --region us-west-2
+ 1336  aws_vault exec dev --help
+ 1337  aws-vault exec dev --help
+ 1338  aws-vault exec dev -- aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 120023305280.dkr.ecr.us-west-2.amazonaws.com
+ 1339  docker build -t hello-world
+ 1340  docker build -t hello-world-repository .
+ 1341  docker tag hello-world-repository:latest 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-world-repository:latest
+ 1342  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-world-repository:latest
+ 1343  docker run -t -i -p 80:80 hello-world
+ 1344  aws-vault exec dev -- aws ecr create-repository --repository-name hello-repository --region us-west-2
+ 1345  docker tag hello-world aws_accont_id.dkr.ecr.region.amazonaws.com/hello-repository
+ 1346  aws-vault exec dev -- aws ecr get-login-password | docker login --username AWS --password-stdin 120023305280.dkr.ecr.us-west-2.amazonaws.com
+ 1347  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1348  aws-vault exec dev -- aws ecr get-login-password | docker login --username AWS --password-stdin 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1349  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1350  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository:latest
+ 1351  git status
+ 1352  git diff
+ 1353  git add .
+ 1354  git commit -m "hello world dockerfile with ECS"
+ 1355  git push
+ 1356  history
+ 1357  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository:latest
+ 1358  docker tag hello-world 120023305280.dkr.ecr.region.amazonaws.com/hello-repository
+ 1359  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository:latest
+ 1360  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1361  docker tag hello-world 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1362  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/hello-repository
+ 1363  aws-vault exec dev -- aws ecr delelte-repository --repository-name hello-repository --region us-west-2 --force
+ 1364  aws-vault exec dev -- aws ecr delete-repository --repository-name hello-repository --region us-west-2 --force
+ 1365  cd Desktop
+ 1366  ls
+ 1367  chmod 400 jem-test-key-pair.pem
+ 1368  nvm --version
+ 1369  . ~/.nvm/nvm.sh
+ 1370  node --version
+ 1371  node -e "console.log('Running Node.js ' + process.version)"
+ 1372  ssh 54.70.255.153 -i ~/Desktop/jem-test-key-pair.pem
+ 1373  ssh ec2-user@54.70.255.153 -i ~/Desktop/jem-test-key-pair.pem
+ 1374  ssh ec2-user@35.164.172.208 -i ~/Desktop/jem-test-key-pair.pem
+ 1375  ssh ec2-user@ec2-35-164-172-208.us-west-2.compute.amazonaws.com -i ~/Desktop/jem-test-key-pair.pem
+ 1376  ssh ec2-user@ec2-34.215.97.248.us-west-2.compute.amazonaws.com -i ~/Desktop/jem-test-key-pair.pem
+ 1377  ssh ec2-34-215-97-248.us-west-2.compute.amazonaws.com -i ~/Desktop/jem-test-key-pair.pem
+ 1378  ssh -i ~/Desktop/jem-test-key-pair.pem ec2-user@34.215.97.248
+ 1379  cd ..
+ 1380  ls
+ 1381  cd workspace
+ 1382  ls
+ 1383  cd intern-projects/jem-frontend-tut
+ 1384  git status
+ 1385  ls
+ 1386  mkdir nodejsHTTPServerOnECS
+ 1387  cd nodejsHTTPServerOnECS
+ 1388  yarn init -y
+ 1389  npm init -y
+ 1390  npm install express
+ 1391  touch server.js
+ 1392  code server.js
+ 1393  node index.js
+ 1394  touch index.js
+ 1395  code index.js
+ 1396  node index.js
+ 1397  touch Dockerfile
+ 1398  code Dockerfile
+ 1399  docker build -t nodejsHTTPServerOnECS
+ 1400  docker build -t nodejsHTTPServerOnECS .
+ 1401  cd ..
+ 1402  cd nodejs-http-server-ecs
+ 1403  touch index.js
+ 1404  code index.js
+ 1405  node index.js
+ 1406  touch Dockerfile
+ 1407  code Dockerfile
+ 1408  docker build -t nodejs-http-server-ecs .
+ 1409  docker images
+ 1410  node index.js
+ 1411  docker build -t nodejs-http-server-ecs .
+ 1412  node index.js
+ 1413  docker build -t nodejs-http-server-ecs .
+ 1414  docker images
+ 1415  docker run -p 80:3000 60fb7a1cb1ca
+ 1416  ls
+ 1417  cd workspace
+ 1418  cd intern-projects/jem-frontend-tut/nodejs-http-server-ecs
+ 1419  docker images
+ 1420  docker container ls
+ 1421  docker run -p 80:3030 60fb7a1cb1ca
+ 1422  docker run -p 80:3000 60fb7a1cb1ca
+ 1423  docker container ls
+ 1424  docker stop 60fb7a1cb1ca
+ 1425  docker stop 914f43313079
+ 1426  docker container ls
+ 1427  docker run -p 80:3000 60fb7a1cb1ca
+ 1428  cd workspace/intern-projects/jem-frontend-tut/nodejs-http-server-ecs
+ 1429  docker container ls
+ 1430  docker stop 7da3e38303d9\n\n
+ 1431  aws configure
+ 1432  cd workspace/intern-projects/jem-frontend-tut/nodejs-http-server-ecs
+ 1433  aws-vault exec dev -- aws ecr get-login --no-include-email --region us-west-2
+ 1434  aws-vault exec dev -- aws help
+ 1435  aws-vault exec dev -- aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 120023305280.dkr.ecr.us-west-2.amazonaws.com
+ 1436  docker build -t nodejs-http-server-ecs .
+ 1437  docker tag nodejs-http-server-ecs:latest 120023305280.dkr.ecr.us-west-2.amazonaws.com/nodejs-http-server-ecs:latest
+ 1438  docker push 120023305280.dkr.ecr.us-west-2.amazonaws.com/nodejs-http-server-ecs:latest
+ 1439  docker image
+ 1440  docker images
+ 1441  cd ..
+ 1442  git status
+ 1443  cd nodejs-http-server-ecs
+ 1444  git status
+ 1445  git diff
+ 1446  git add .
+ 1447  git commit -m "added nodejs deployed with ecs tutorial"
+ 1448  git push
+ 1449  cd ..
+ 1450  cd usingS3
+ 1451  ls
+ 1452  cd test-react-app
+ 1453  npm run build
+ 1454  git status
+ 1455  vim ~/Desktop/jem-test-key-pair.pem
+ 1456  history
+ 1457  history | grep serverless
+ 1458  history | grep serverless remove
+ 1459  history | grep "serverless remove"
