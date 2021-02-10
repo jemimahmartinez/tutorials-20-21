@@ -13,6 +13,9 @@ import injectStyles from './styles';
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
   uri: 'http://localhost:4000/graphql',
+  headers: {
+    authorization: localStorage.getItem('token') || '',
+  },
 });
 
 injectStyles();
@@ -53,3 +56,6 @@ ReactDOM.render(
 
 // `ApolloProvider` component is similar to React's context provider: it wraps your React app and places `client` on the context,
 // which enables you to acces it from anywhere in your component tree
+
+// Added Authorization headers to all requests when initializing ApolloClient
+// Our server can ignore the token when resolvoing operations that don't require it (such as fetching the list of launches), so it's fine for our client to include the token in every request
